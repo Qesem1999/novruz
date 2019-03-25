@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jsobject.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <div class="row">
+                    <a class="navbar-brand" href="#">Academy</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                       
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-6 offset-3">
+                        <h1>Welcome to Code Academy</h1>
+                </div>
+               
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class=" col-12 alert alert-primary text-center" role="alert">
+                   Nizami kucesi 203B, AF Bisuness Hause, 2-ci mertebe
+                </div>
+            </div>
+        </section>
+        <section class="container mt-4">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Information about Code Academy</h2>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-3">Student : <span id="numberofstudent"></span> </div>
+                        <div class="col-3">Teacher count : <span id="numberofteacher"></span> </div>
+                        <div class="col-3">Group count : <span id="numberofgroup"></span> </div>
+                        <div class="col-3">Room count : <span id="numberofroom"></span> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="left">
+                    <div class="row  border mt-5 rounded border-primary ">
+                        <div class="col-6 offset-4">
+                            <h2>Students</h2>
+                        </div>
+                        <div class="col-10 offset-1">
+                            <form>
+                                <div class="form-group">
+                                  <label for="formGroupExampleInput">Name</label>
+                                  <input type="text" class="form-control" id="name" >
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-10 offset-1">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="formGroupExampleInput">Surname</label>
+                                      <input type="text" class="form-control" id="surname" >
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="col-10 offset-1">
+                                <form>
+                                        <div class="form-group">
+                                                <label for="exampleFormControlInput1"> Email</label>
+                                                <input type="email" class="form-control" id="email" >
+                                              </div>
+                                </form>
+                        </div>
+                        <div class="col-11 offset-1 mt-3">
+                            <h2>Adress</h2>
+                        </div>
+                        <div class="col-10 offset-1">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="formGroupExampleInput">Street</label>
+                                      <input type="text" class="form-control" id="street" >
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-10 offset-1">
+                                    <form>
+                                        <div class="form-group">
+                                          <label for="formGroupExampleInput">City</label>
+                                          <input type="text" class="form-control" id="city" >
+                                        </div>
+                                    </form>
+                            </div>
+                            <div class="col-10 offset-1">
+                                    <form>
+                                        <div class="form-group">
+                                          <label for="formGroupExampleInput">Country</label>
+                                          <input type="text" class="form-control" id="country" >
+                                        </div>
+                                    </form>
+                            </div>
+                            <div class="col-2 offset-9 ">
+                                    <button type="button" onclick="savestudent()" class="btn btn-outline-primary">Save</button>
+                            </div>
+                            <div class="col-6 offset-3">
+                                <h2>List of Students</h2>
+                            </div>
+                            <div class="col-12 personlist pb-2">
+                                
+
+                                
+                            </div>
+                    </div>
+                </div>
+                <div class="right   ">
+                    <div class="row border mt-5 rounded border-primary">
+                            <div class="col-6 offset-4">
+                                    <h2>Rooms</h2>
+                                </div>
+                                <div class="col-10 offset-1">
+                                    <form>
+                                        <div class="form-group">
+                                          <label for="formGroupExampleInput">Name</label>
+                                          <input type="text" class="form-control" id="roomname" >
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-10 offset-1">
+                                        <form>
+                                            <div class="form-group">
+                                              <label for="formGroupExampleInput">Capacity</label>
+                                              <input type="number" class="form-control" id="capacity" >
+                                            </div>
+                                        </form>
+                                </div>
+                                <div class="col-2 offset-9">
+                                        <button type="button" onclick="saveroom()" class="btn btn-outline-primary">Save</button>
+                                </div>
+                                <div class="col-6 offset-4 mt-4">
+                                        <h2>List of Rooms</h2>
+                                    </div>
+                                <div class="roomlist col-10 offset-1 mt-2 pb-2">
+
+                                </div>
+
+                    </div>
+                    <div class="row">
+                            <div class="rightbottom   ">
+                                    <div class="row border mt-5 rounded border-primary">
+                                            <div class="col-6 offset-4">
+                                                    <h2>Group</h2>
+                                                </div>
+                                                <div class="col-10 offset-1">
+                                                    <form>
+                                                        <div class="form-group">
+                                                          <label for="formGroupExampleInput">Name</label>
+                                                          <input type="text" class="form-control" id="groupname" >
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-10 offset-1">
+                                                        <p class="mb-2">Room</p>
+                                                </div>
+                                                <select class="custom-select margin" id="selectroom" style="width:450px">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                </select>
+                                                <div class="col-2 offset-9 mt-3">
+                                                        <button type="button" onclick="savegroup()" class="btn btn-outline-primary">Save</button>
+                                                </div>
+                                                <div class="col-6 offset-4 mt-4">
+                                                        <h2>List of Groups</h2>
+                                                    </div>
+                                                <div class="grouplist col-10 offset-1 mt-2 pb-2">
+
+                                                </div>
+                                    </div>
+                    </div>
+                </div>
+                
+            <div class="row">
+                <div class="rightbottom">
+                    <div class="row  border mt-5 rounded border-primary ">
+                                        <div class="col-6 offset-4">
+                                            <h2>Students</h2>
+                                        </div>
+                                        <div class="col-10 offset-1">
+                                            <form>
+                                                <div class="form-group">
+                                                  <label for="formGroupExampleInput">Name</label>
+                                                  <input type="text" class="form-control" id="nameteacher" >
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-10 offset-1">
+                                                <form>
+                                                    <div class="form-group">
+                                                      <label for="formGroupExampleInput">Surname</label>
+                                                      <input type="text" class="form-control" id="surnameteacher" >
+                                                    </div>
+                                                </form>
+                                        </div>
+                                        <div class="col-10 offset-1">
+                                                <form>
+                                                        <div class="form-group">
+                                                                <label for="exampleFormControlInput1"> Email</label>
+                                                                <input type="email" class="form-control" id="emailteacher" >
+                                                        </div>
+                                                </form>
+                                         </div>  
+                                         <div class="col-10 offset-1">
+                                                <p class="mb-2">Groups</p>
+                                        </div>
+                                         <select class="custom-select margin" id="selectteacher" style="width:450px">
+                                                <option selected>Choose...</option>
+                                                <option value="P210 - Titan">P210 - Titan </option>
+                                                <option value="P309 - Room3">P309 - Room3 </option>
+                                                <option value="Group3 - Jupiter">Group3 - Jupiter </option>
+                                                <option value="P210 - Jupiter">P210 - Jupiter</option>
+                                        </select>    
+                                        <div class="col-2 offset-9 mt-3">
+                                                <button type="button" onclick="saveTeacher()" class="btn btn-outline-primary">Save</button>
+                                        </div> 
+                                        <div class="col-6 offset-4 mt-4">
+                                                <h2>List of Teachers</h2>
+                                            </div>
+                                        <div class="teacherlist col-10 offset-1 mt-2 pb-2">
+
+                                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/jsobject.js"></script>
+</body>
+</html>

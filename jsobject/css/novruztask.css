@@ -1,0 +1,521 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+
+}
+.header2 {
+    
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 2;
+    position: fixed;
+    top: 45px;
+
+}
+.headertop{
+    height: auto;
+    background: rgba(0, 201, 177, 0.842);
+    
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerbottom{
+    height: auto;
+    background: white;
+    
+   
+}
+
+.heaadericon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end
+    
+}
+.brand {
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heaadericon a{
+    color: white;
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 5px;
+}
+header img {
+    width: 100%;
+    height: 80%;
+}
+header ul li a {
+    color: grey;
+    padding: 0px 12px;
+    font-size: 13px;
+}
+header ul li a:hover{
+    color: orangered;
+}
+.active {
+    color: orangered;
+}
+.menuclick{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.design{
+   height: 100vh;
+
+   background-image: url(../img/novruz-1.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+.designrow{
+    height: 100%;
+}
+.designh1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.designh1 p{
+    font-size: 25px;
+    color: orangered;
+}
+
+.designh1 h1{
+    color: white;
+    font-size: 80px;
+    word-spacing: 15px;
+    letter-spacing: 4px;
+}
+.designcontent{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.designbutton {
+    display: flex;
+    justify-content: center;
+}
+.registar{
+    background: orangered;
+    border: none;
+    letter-spacing: 4px
+}
+.registar:hover {
+    background: #00C9B1;
+}
+.buynow{
+    background: #00C9B1;
+    border: none;
+    letter-spacing: 4px;
+}
+.buynow:hover{
+    background: orangered;
+}
+.fourdiv{
+    height: 270px;
+    background: #ddd
+}
+.fourdiv div{
+    height: 100%;
+    
+    
+}
+
+.soundgood{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.soundgood div {
+    width: 20%;
+    height: 20%;
+    border: 2px solid gray;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.soundgood div i {
+    color: gray;
+}
+.soundgood:hover div{
+    background: orangered;
+    border: orangered;
+   
+}
+.soundgood:hover div i{
+  color: white;
+}
+.soundgood div p{
+    text-align: center;
+    
+}
+.extra {
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+.extra img{
+    height: 80%;
+}
+.extraimg{
+    display: flex;
+    align-items: center;
+}
+.extra ul li{
+    list-style-type: none;
+}
+.extra ul li i {
+    color: orangered;
+    margin: 0
+}
+.extracontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.extrabtn {
+    width: 20%;
+    border: 2px solid orangered
+    
+}
+.extrabtn:hover {
+    border:2px solid gray;
+    background: white;
+    color: gray;
+   
+}
+.work {
+    height: 200px;
+    background: #00C9B1;
+    
+  
+  
+}
+.workcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.amazing{
+    height: 500px;
+    background-image: url(../img/novruz-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.layer{
+    width: 102%;
+    height: 100%;
+    background: rgba(39, 46, 45, 0.445)
+}
+.amazingcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.amazingbtn{
+    border: 2px solid orangered
+}
+.amazingbtn:hover{
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+.work2 {
+    height: 250px;
+    display: flex;
+    align-items: center;
+
+}
+.work2content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.work2content div{
+    height: 4px;
+    width:  12%;
+    background: orangered;
+    
+
+}
+.work2content p{
+    color: gray;
+    letter-spacing: 7px
+}
+.siximage img{
+    height: 300px;
+    
+}
+.siximagebtn{
+    border: 2px solid gray;
+    background: white;
+    color: gray;
+
+}
+.siximagebtn:hover{
+    background: orangered;
+    border: 2px solid orangered;
+    color: white;
+}
+.siximagelay{
+    position: relative;
+}
+.siximagelay:hover .siximageoverlay{
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.siximageoverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    height: 100%;
+    background: rgba(51, 45, 45, 0.692);
+    
+}
+.siximageoverlay div:nth-child(1){
+    height: 60%;
+    
+}
+.siximageoverlay div:nth-child(2){
+    height: 36%;
+    display: flex;
+    justify-content: flex-end;
+}
+.siximageoverlay div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.siximageoverlay div h5{
+    color: orangered;
+}
+.siximageoverlay div p{
+    letter-spacing: 2px;
+}
+.siximageoverlay div i{
+    color: orangered;
+    font-size: 21px;
+    
+    
+}
+.siximageoverlay div:nth-child(2){
+    display: flex;
+    align-items: flex-end;
+
+}
+.bacground{
+    background: #ddd
+}
+.threeline{
+    height: 100px;
+   
+}
+.threeline:hover{
+    background-image: url(../img/novruz-17.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+.threeline:hover h5{
+    color: white;
+}
+.threelinebg{
+    background: orangered;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.threelineicon{
+    font-size: 40px
+}
+.blogbtn{
+    letter-spacing: 2px;
+    background: orangered;
+    border:2px solid orangered;
+}
+.blogbtn:hover{
+    background: white;
+    color: gray;
+    border:2px solid gray;
+}
+.kaplan{
+    height: 100px;
+}
+.kaplan img{
+    height: 70%;
+    width: 90%;
+   
+}
+.mapouter{
+    position: relative;
+  
+
+}
+.sendmessage{
+    background: rgba(0, 201, 177, 0.842);
+    height: 490px;
+    position: absolute;
+
+}
+
+.mapoverlay{
+    height: 490px;
+    background: rgba(39, 46, 45, 0.445);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.map input{
+    width: 220px;
+    height: 40px;
+    background: rgba(0, 201, 177, 0.151);
+   border: none;
+   border-bottom: 2px solid white;
+}
+.map input::placeholder{
+    color: white;
+}
+.map textarea{
+    background: rgba(0, 201, 177, 0.151);
+    border: none;
+    border-bottom: 2px solid white;
+}
+.map textarea::placeholder{
+    color: white;
+}
+.socialicon{
+    height: 130px;
+    
+}
+.borderleft{
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.borderleft i{
+    color: gray;
+}
+.borderleft p{
+    letter-spacing: 3px;
+    margin-left: 8px;
+    margin-top: 14px;
+}
+.borderleft div{
+    height: 22%;
+    width: 17%;
+    border: 2px solid gray;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.borderright{
+    border-right: 1px solid black;
+}
+.footerdisplay{
+    display: flex;
+    flex-direction: row;
+}
+.footertop{
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+footer{
+    background: rgb(14, 12, 12)
+}
+.do{
+    height: 75px;
+}
+.do img{
+    height: 100%;
+    width: 100%
+}
+.borderbottom{
+    border-bottom: 1px solid  #212529;;
+}
+.footerbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerbottom h6{
+    letter-spacing: 6px;
+}
+.twithover:hover{
+    background: rgb(28, 28, 102);
+    transition: all .4s ease-in-out;
+
+}
+.facehover:hover{
+    background: rgb(46, 46, 163);
+    transition: all .4s ease-in-out;
+}
+.vimeohover:hover{
+    background: yellowgreen;
+    transition: all .4s ease-in-out;
+}
+.dribbhover:hover{
+    background: palevioletred;
+    transition: all .4s ease-in-out;
+}
+.behanchover:hover{
+    background: blue;
+    transition: all .4s ease-in-out;
+}
+footer a{
+    
+    color: #212529
+
+}
+footer a:hover{
+    color: rgb(206, 100, 62);
+    text-decoration: none;
+}
+
+
+
+    
+

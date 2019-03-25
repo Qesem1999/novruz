@@ -1,0 +1,14 @@
+.left{
+    width: 48%;
+}
+.right {
+    width: 48%;
+    margin-left: 4%
+}
+.rightbottom{
+    width: 95%;
+    margin-left: 3%;
+}
+.margin{
+    margin-left: 63px;
+}
